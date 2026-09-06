@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Focus Oyl 隱私權政策</title>
+  <meta name="description" content="Focus Oyl privacy policy for local-first reminders, OCR, timeline, notification access, and Safety Check." />
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #ffffff;
+      --ink: #111111;
+      --muted: #5f6368;
+      --line: #e7e7e7;
+      --surface: #f7f7f7;
+      --max: 820px;
+      font-family: -apple-system, BlinkMacSystemFont, "Inter", "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", system-ui, sans-serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0a0a0b;
+        --ink: #f5f5f5;
+        --muted: #a8a8a8;
+        --line: #252525;
+        --surface: #151515;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.72;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    main {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 56px 24px 96px;
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(36px, 7vw, 56px);
+      line-height: 1.05;
+      letter-spacing: -0.035em;
+    }
+    h2 {
+      margin: 48px 0 12px;
+      font-size: 24px;
+      line-height: 1.25;
+      letter-spacing: -0.015em;
+    }
+    h3 {
+      margin: 28px 0 8px;
+      font-size: 17px;
+      line-height: 1.35;
+    }
+    p, li { font-size: 16px; }
+    p { margin: 0 0 14px; }
+    ul { margin: 0 0 18px; padding-left: 22px; }
+    li + li { margin-top: 6px; }
+    a { color: inherit; text-underline-offset: 3px; }
+    .meta {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 36px;
+    }
+    .lead {
+      max-width: 64ch;
+      font-size: 19px;
+      line-height: 1.62;
+    }
+    .notice {
+      margin: 28px 0 36px;
+      padding: 18px 20px;
+      border: 1px solid var(--line);
+      background: var(--surface);
+    }
+    .notice p:last-child { margin-bottom: 0; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0 24px;
+      font-size: 14px;
+    }
+    th, td {
+      text-align: left;
+      vertical-align: top;
+      padding: 12px;
+      border-top: 1px solid var(--line);
+    }
+    th {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    code {
+      padding: 1px 5px;
+      border-radius: 4px;
+      background: var(--surface);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.92em;
+    }
+    footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Focus Oyl 隱私權政策</h1>
+    <p class="meta">最後更新日期：2026 年 4 月 28 日</p>
+
+    <p class="lead">Focus Oyl（Focus on your life）是一個以本機優先為核心的提醒與安全確認應用程式。它協助使用者從自己選取、貼上、分享、匯入或明確授權的內容中提取提醒，並在需要時以安靜、低干擾的方式通知使用者。</p>
+
+    <div class="notice">
+      <p><strong>重點摘要：</strong>目前版本沒有廣告 SDK、沒有第三方分析 SDK、沒有 Focus Oyl 雲端帳號，也不會把你的提醒資料上傳到 Focus Oyl 伺服器。大多數資料都在你的裝置上處理與保存。</p>
+      <p>若你啟用 Safety Check 的簡訊或位置備援功能，應用程式可能會透過電信業者簡訊，把安全狀態或位置傳送給你設定的家屬聯絡人。這類分享只會在你明確設定並授權後發生。</p>
+    </div>
+
+    <h2>1. 本政策適用範圍</h2>
+    <p>本政策適用於 Focus Oyl Android 應用程式、PWA 網頁版本，以及與 Focus Oyl 相關的本機匯入、提醒、時間軸、OCR、跨裝置接續與 Safety Check 功能。</p>
+    <p>本政策不適用於你透過 Focus Oyl 開啟或連結到的第三方網站、作業系統服務、電信服務、應用商店或其他第三方應用程式。這些服務有各自的隱私權政策。</p>
+
+    <h2>2. 我們如何設計資料處理</h2>
+    <p>Focus Oyl 的預設設計是「本機優先」。這表示：</p>
+    <ul>
+      <li>提醒、設定、時間軸、安全確認狀態與本機記憶主要儲存在你的裝置上。</li>
+      <li>文字分析、提醒提取與 OCR 等功能盡可能在你的裝置上執行。</li>
+      <li>目前版本不建立 Focus Oyl 帳號，也不提供 Focus Oyl 雲端同步資料庫。</li>
+      <li>目前版本不包含第三方廣告 SDK 或第三方分析 SDK。</li>
+    </ul>
+
+    <h2>3. Focus Oyl 可能處理的資料</h2>
+    <p>Focus Oyl 只會在你主動提供、分享、匯入或授權後，處理與功能相關的資料。可能包含：</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>資料類型</th>
+          <th>使用目的</th>
+          <th>是否預設上傳到 Focus Oyl 伺服器</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>貼上、分享或匯入的文字</td>
+          <td>在本機分析文字內容、提取日期、待辦事項、提醒與時間軸項目。</td>
+          <td>否</td>
+        </tr>
+        <tr>
+          <td>你選取的圖片、截圖或檔案</td>
+          <td>執行 OCR 文字辨識，協助建立提醒或時間軸項目。</td>
+          <td>否</td>
+        </tr>
+        <tr>
+          <td>通知內容</td>
+          <td>若你明確開啟 Android 通知存取權，Focus Oyl 可在本機讀取授權來源的通知標題與文字，提取可能需要提醒的事項。</td>
+          <td>否</td>
+        </tr>
+        <tr>
+          <td>聯絡人資料</td>
+          <td>若你授權聯絡人權限，Focus Oyl 可能在本機協助你選擇或確認 Safety Check 的可信任家屬聯絡人。</td>
+          <td>否</td>
+        </tr>
+        <tr>
+          <td>日曆資料</td>
+          <td>若你授權日曆權限，Focus Oyl 可能在本機協助理解行程、時間與提醒安排。</td>
+          <td>否</td>
+        </tr>
+        <tr>
+          <td>位置資料</td>
+          <td>僅用於你明確啟用的 Safety Check 逾時備援。若安全確認逾時，且你已授權位置與簡訊備援，Focus Oyl 可能將目前或最後已知位置傳送給你設定的家屬聯絡人。</td>
+          <td>否，但可能透過簡訊傳送給你指定的家屬聯絡人</td>
+        </tr>
+        <tr>
+          <td>SMS 簡訊指令與回覆</td>
+          <td>若你啟用簡訊備援，Focus Oyl 可接收可信任號碼傳來的 <code>SAFE_CHECK</code> 指令，並在安全確認逾時後傳送安全狀態或位置備援簡訊。</td>
+          <td>否，但簡訊會經由你的電信業者傳送</td>
+        </tr>
+        <tr>
+          <td>裝置與應用程式狀態</td>
+          <td>用於本機提醒、精確鬧鐘、背景執行、電池最佳化提示與跨裝置接續包。</td>
+          <td>否</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>4. 權限使用說明</h2>
+    <p>Focus Oyl 可能依照你使用的功能與平台，要求以下權限。你可以在作業系統設定中撤回權限，但撤回後相關功能可能無法運作。</p>
+
+    <h3>聯絡人</h3>
+    <p>用於協助你在本機選擇或確認 Safety Check 的家屬聯絡人。Focus Oyl 不會把你的通訊錄上傳到 Focus Oyl 伺服器。</p>
+
+    <h3>日曆</h3>
+    <p>用於本機理解行程與提醒時間。Focus Oyl 不會把你的日曆內容上傳到 Focus Oyl 伺服器。</p>
+
+    <h3>照片、圖片、檔案與 OCR</h3>
+    <p>用於辨識你主動選取的圖片、截圖或檔案中的文字，協助建立提醒。Focus Oyl 不會自動掃描你所有照片。</p>
+
+    <h3>通知存取</h3>
+    <p>若你明確授權，Focus Oyl 可在本機讀取授權來源的通知文字，判斷是否有需要提醒的事項。Focus Oyl 不會把通知內容上傳到 Focus Oyl 伺服器。</p>
+
+    <h3>位置</h3>
+    <p>位置只用於你啟用的 Safety Check 逾時備援。當家屬呼叫確認後，如果你在倒數時間內按下「我沒事」，Focus Oyl 不會傳送位置。只有在你未回應、且你已啟用位置與簡訊備援時，Focus Oyl 才可能把目前或最後已知位置傳送給你設定的家屬聯絡人。</p>
+
+    <h3>SMS 簡訊</h3>
+    <p>SMS 備援用於沒有網路或推播不可用時的 Safety Check。Focus Oyl 只會針對可信任家屬號碼傳來的 <code>SAFE_CHECK</code> 指令啟動安全確認流程，並在逾時時回覆安全狀態或位置備援簡訊。Focus Oyl 不會閱讀一般簡訊對話內容。</p>
+
+    <h3>精確鬧鐘、通知與背景執行</h3>
+    <p>用於本機提醒、安靜時段、提前提醒與 Safety Check 倒數。關閉這些權限可能會影響提醒準確性。</p>
+
+    <h2>5. 資料分享</h2>
+    <p>Focus Oyl 目前不會販售個人資料，也不會將提醒、OCR 內容、通知文字或本機記憶出售或提供給廣告平台。</p>
+    <p>Focus Oyl 可能在以下情況分享資料：</p>
+    <ul>
+      <li><strong>Safety Check 簡訊備援：</strong>若你啟用此功能，逾時時可能透過電信業者向你設定的家屬聯絡人傳送安全狀態或位置。</li>
+      <li><strong>你主動分享或匯出：</strong>若你使用跨裝置接續包、備份匯出、系統分享功能或手動複製資料，資料會依照你的操作傳送到你選擇的位置。</li>
+      <li><strong>法律要求：</strong>若適用法律、法院命令或政府機關依法要求，我們可能需要回應相關請求。但目前版本沒有 Focus Oyl 雲端帳號或伺服器提醒資料可供查詢。</li>
+    </ul>
+
+    <h2>6. 第三方服務</h2>
+    <p>Focus Oyl 可能依賴作業系統、Android 系統服務、Google Play、Apple 平台、瀏覽器、電信業者與你選擇的網域或檔案服務來提供安裝、通知、簡訊、位置、分享或網站存取功能。這些第三方服務可能依照其自身政策處理資料。</p>
+    <p>目前版本沒有使用廣告 SDK，也沒有使用第三方分析 SDK。</p>
+
+    <h2>7. 資料保存與刪除</h2>
+    <p>Focus Oyl 的提醒、設定、安全確認狀態、匯入資料與本機記憶會保存在你的裝置上，直到你在應用程式中清除、本機瀏覽器或系統資料被清除，或你解除安裝應用程式。</p>
+    <p>因為目前版本沒有 Focus Oyl 雲端帳號，若你想刪除 Focus Oyl 保存的資料，請在應用程式內清除本機資料，或透過作業系統解除安裝/清除應用程式資料。</p>
+
+    <h2>8. 資料安全</h2>
+    <p>Focus Oyl 採取本機優先設計以降低不必要的資料傳輸。請注意，裝置本身的安全性仍取決於你的作業系統、鎖定方式、備份設定與第三方應用程式。</p>
+    <p>SMS 簡訊通常不是端對端加密，且會經由電信業者傳送。若你啟用 SMS 備援，請只設定你信任的家屬聯絡人。</p>
+
+    <h2>9. 兒童與家庭</h2>
+    <p>Focus Oyl 並非為兒童設計，也不是 Google Play「專為家庭設計」方案的一部分。Focus Oyl 的目標使用者是成人、照護者，以及需要本機提醒與安全確認工具的使用者。</p>
+
+    <h2>10. 你的選擇與控制</h2>
+    <ul>
+      <li>你可以選擇是否貼上、分享、匯入或授權任何內容。</li>
+      <li>你可以在作業系統設定中撤回聯絡人、日曆、圖片、通知、位置與 SMS 權限。</li>
+      <li>你可以停用 Safety Check、SMS 備援或位置備援。</li>
+      <li>你可以清除本機資料或解除安裝應用程式。</li>
+    </ul>
+
+    <h2>11. 政策更新</h2>
+    <p>我們可能因功能、平台要求或法規變更更新本政策。更新後會修改本頁的「最後更新日期」。若未來 Focus Oyl 新增雲端同步、帳號、付款、訂閱、分析或廣告功能，本政策將同步更新，並在必要時於應用程式內要求新的同意。</p>
+
+    <h2>12. 聯絡方式</h2>
+    <p>如有隱私權或資料處理問題，請聯絡：</p>
+    <ul>
+      <li>電子郵件：<a href="mailto:support@example.com">support@example.com</a></li>
+      <li>網站：<a href="https://danieldowork.com">https://danieldowork.com</a></li>
+    </ul>
+
+    <footer>
+      Focus Oyl / Focus on your life. Local-first reminders, OCR, timeline, and Safety Check.
+    </footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,4 @@
+storeFile=../secrets/focus-oyl-upload.jks
+storePassword=REPLACE_WITH_KEYSTORE_PASSWORD
+keyAlias=focus-oyl-upload
+keyPassword=REPLACE_WITH_KEY_PASSWORD

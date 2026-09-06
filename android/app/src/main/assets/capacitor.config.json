@@ -1,0 +1,16 @@
+{
+	"appId": "com.focusoyl.app",
+	"appName": "Focus Oyl",
+	"webDir": "www",
+	"server": {
+		"androidScheme": "https"
+	},
+	"plugins": {
+		"SplashScreen": {
+			"launchShowDuration": 250,
+			"backgroundColor": "#ffffff",
+			"darkBackgroundColor": "#0a0a0b",
+			"showSpinner": false
+		}
+	}
+}

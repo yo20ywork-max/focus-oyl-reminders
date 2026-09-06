@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Focus Oyl Feature Graphic</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      width: 1024px;
+      height: 500px;
+      overflow: hidden;
+      background: #ffffff;
+      color: #0a0a0a;
+      font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Display", system-ui, sans-serif;
+    }
+    .frame {
+      width: 1024px;
+      height: 500px;
+      padding: 52px 70px;
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 70px;
+      align-items: center;
+    }
+    .mark {
+      width: 64px;
+      height: 64px;
+      border-radius: 18px;
+      background: #0a0a0a;
+      display: grid;
+      place-items: center;
+      margin-bottom: 34px;
+    }
+    .mark::after {
+      content: "";
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: #ffffff;
+    }
+    .eyebrow {
+      font-size: 15px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #777777;
+      margin: 0 0 16px;
+      font-weight: 600;
+    }
+    h1 {
+      margin: 0;
+      font-size: 62px;
+      line-height: 0.98;
+      letter-spacing: -0.055em;
+      font-weight: 800;
+      max-width: 550px;
+    }
+    p {
+      font-size: 19px;
+      line-height: 1.28;
+      margin: 20px 0 0;
+      color: #383838;
+      max-width: 520px;
+    }
+    .phone {
+      width: 300px;
+      height: 364px;
+      border: 2px solid #0a0a0a;
+      border-radius: 46px;
+      padding: 28px 24px;
+      position: relative;
+      background: #fafafa;
+    }
+    .phone::before {
+      content: "";
+      position: absolute;
+      top: 13px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 68px;
+      height: 5px;
+      border-radius: 999px;
+      background: #d8d8d8;
+    }
+    .date { font-size: 13px; color: #777; margin-top: 38px; }
+    .time { font-size: 70px; line-height: 1; letter-spacing: -0.06em; font-weight: 200; margin: 8px 0 34px; }
+    .card {
+      border: 1px solid #dcdcdc;
+      border-radius: 16px;
+      background: #ffffff;
+      padding: 18px;
+    }
+    .card b { display: block; font-size: 17px; line-height: 1.2; margin-bottom: 8px; }
+    .card span { display: block; font-size: 12px; line-height: 1.45; color: #666; }
+    .pill {
+      margin-top: 18px;
+      width: 92px;
+      height: 7px;
+      border-radius: 999px;
+      background: #0a0a0a;
+    }
+  </style>
+</head>
+<body>
+  <section class="frame">
+    <div>
+      <div class="mark"></div>
+      <p class="eyebrow">Focus Oyl</p>
+      <h1>Focus on your life.</h1>
+      <p>Local-first reminders. Quiet until timing matters.</p>
+    </div>
+    <div class="phone">
+      <div class="date">Monday, April 27</div>
+      <div class="time">09:41</div>
+      <div class="card">
+        <b>One thing needs attention.</b>
+        <span>Quiet until timing matters.</span>
+      </div>
+      <div class="pill"></div>
+    </div>
+  </section>
+</body>
+</html>

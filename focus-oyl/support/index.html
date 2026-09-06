@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Focus Oyl Support</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #ffffff;
+      --ink: #111111;
+      --muted: #666666;
+      --line: #e8e8e8;
+      font-family: -apple-system, BlinkMacSystemFont, "Inter", "PingFang TC", "Noto Sans TC", system-ui, sans-serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #0a0a0b; --ink: #f5f5f5; --muted: #a0a0a0; --line: #242424; }
+    }
+    body { margin: 0; background: var(--bg); color: var(--ink); line-height: 1.7; }
+    main { max-width: 720px; margin: 0 auto; padding: 56px 24px 96px; }
+    h1 { font-size: 42px; line-height: 1.1; letter-spacing: -0.03em; margin: 0 0 12px; }
+    h2 { font-size: 22px; margin: 48px 0 12px; }
+    p, li { font-size: 16px; }
+    .meta { color: var(--muted); font-size: 13px; margin-bottom: 40px; }
+    a { color: inherit; text-underline-offset: 3px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Focus Oyl Support</h1>
+    <p class="meta">Focus on your life.</p>
+    <p>Focus Oyl is a local-first reminder and safety-check app. For support, bug reports, privacy requests, or account questions, contact:</p>
+    <p><a href="mailto:support@example.com">support@example.com</a></p>
+
+    <h2>Helpful details to include</h2>
+    <ul>
+      <li>Your device model and Android or iOS version.</li>
+      <li>Whether the issue happened in import, OCR, reminders, handoff, or Safety Check.</li>
+      <li>Approximate time of the issue.</li>
+      <li>Do not send sensitive screenshots unless necessary.</li>
+    </ul>
+  </main>
+</body>
+</html>

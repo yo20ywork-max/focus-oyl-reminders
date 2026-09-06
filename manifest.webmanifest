@@ -1,0 +1,56 @@
+{
+  "name": "Focus Oyl",
+  "short_name": "Focus Oyl",
+  "description": "Focus on your life. An ambient, local-first reminder layer.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "orientation": "any",
+  "categories": ["productivity", "utilities"],
+  "share_target": {
+    "action": "/?share=1",
+    "method": "GET",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  },
+  "shortcuts": [
+    {
+      "name": "匯入訊號",
+      "short_name": "匯入",
+      "url": "/#import",
+      "description": "貼上聊天、截圖文字或匯出檔。"
+    },
+    {
+      "name": "查看時間軸",
+      "short_name": "時間軸",
+      "url": "/#timeline",
+      "description": "查看過去、現在與未來的提醒。"
+    },
+    {
+      "name": "連接裝置",
+      "short_name": "接續",
+      "url": "/#devices",
+      "description": "匯出或匯入本機接續包。"
+    }
+  ],
+  "icons": [
+    {
+      "src": "icons/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

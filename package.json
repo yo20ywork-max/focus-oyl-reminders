@@ -1,0 +1,24 @@
+{
+  "name": "focus-oyl",
+  "version": "1.0.0",
+  "description": "Focus on your life.",
+  "main": "app.js",
+  "scripts": {
+    "build:mobile-web": "node tools/build-mobile-web.mjs",
+    "check": "node --check app.js && node --check memory-core.js && node --check time-core.js && node --check ocr-engine.js && node --check native-bridge.js && node --check service-worker.js",
+    "test": "node tools/regression-check.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@capacitor/android": "^8.3.1",
+    "@capacitor/cli": "^8.3.1",
+    "@capacitor/core": "^8.3.1",
+    "@capacitor/ios": "^8.3.1",
+    "@tesseract.js-data/chi_tra": "^1.0.0",
+    "@tesseract.js-data/eng": "^1.0.0",
+    "tesseract.js": "^7.0.0"
+  }
+}
